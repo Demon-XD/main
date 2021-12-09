@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter First  numbers: ");
+        double first = reader.nextDouble();
+        System.out.print("Enter Second numbers: ");
+        double second = reader.nextDouble();
+        System.out.print("Enter operator (+,-,,/):"); 
+        char operator = reader.next().charAt(0);
+
+        System.out.print(" First = "+ first);
+        System.out.print(" second = "+ second);
+        System.out.print(" operator = "+ operator);
+        double result;
+        if      (operator == '*')  { result = first * second;}
+        else if (operator == '/') { result = first / second;}
+        else if (operator == '+') { result = first + second;}
+        else if (operator == '-') { result = first - second;}
+        else  result = 0;
+        System.out.print(" result = "+ result);
+    }
+
+}
