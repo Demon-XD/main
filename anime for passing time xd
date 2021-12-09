@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class anime
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        
+        System.out.println("enter the numbers from 1,2,3. if you have selected 1 in the category it has Asta and Yuno . in 2 it has Nagisa and Kurasama. in 3 it has Light Yagami and L");
+        int a=sc.nextInt();
+        
+        if (a==1){
+           int random=(int)(1+Math.random()*2);
+           if (random==1)System.out.println("ASTA WINS LES GO");
+           else System.out.println("YUNO wins well he has 4 clover grimoire so expected");
+        }
+        else if (a==2){
+            int Random=(int)(1+Math.random()*2);
+            if(Random==1)System.out.println("NAGISA WINS(that little kira)");
+            else System.out.println("KURASUMA wins(hes a good assassin noicee)");
+        }
+        else if(a==3){
+            int RANDOM=(int)(1+Math.random()*2);
+            if(RANDOM==1)System.out.println("Light yagami wins (don't spell yagami backwards SHHHHHH)");
+            else System.out.println("L wins (RIP)");
+        }
+    }
+}
