@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class VOLUME_OF_SOLID
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int l,b,h,v,r,n;
+        
+        System.out.println("1 for cuboid \n2 for cylinder \n3 for cone");
+        n=sc.nextInt();
+        
+        
+        switch(n)
+        {
+            case 1:
+                System.out.println("enter values of l,b,h");
+                l=sc.nextInt();
+                b=sc.nextInt();
+                h=sc.nextInt();
+                v=l*b*h;
+                System.out.println("VOLUME FOR CUBOID IS :" +v);
+                break;
+            case 2:
+                System.out.println("enter r,h");
+                r=sc.nextInt();
+                h=sc.nextInt();
+                v=(22/7)*r*r*h;
+                System.out.println("VOLUME FOR CYLINER IS :"+v);
+                break;
+            case 3:
+                System.out.println("enter r and h");
+                r=sc.nextInt();
+                h=sc.nextInt();
+                v=(1/3)*(22/7)*r*r*h;
+                System.out.println("VOLUME FOR CONE IS :"+v);
+                break;
+            default:
+                System.out.println("error sheeeesh");
+            }
+        }
+    }
+            
+            
+                
+                
