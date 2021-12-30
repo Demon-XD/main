@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class conversion
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        double c,f;
+        int n;
+        System.out.println("1 for Celsius to Fahrenheit \n2 for Fahrenheit to Celsius");
+        n=sc.nextInt();
+        
+        switch(n)
+        {
+            case 1:
+                System.out.println("enter Celsius");
+                c=sc.nextDouble();
+                f=(1.8*c)+32;
+                System.out.println("the temperature in fahrenheit is :"+f);
+                break;
+            case 2:
+                System.out.println("enter Fahrenheit");
+                f=sc.nextDouble();
+                c=(5/9)*(f-32);
+                System.out.println("the temperature in celsius is :"+c);
+                break;
+            default:
+                System.out.println("wrong choice my guy");
+            }
+        }
+    }
+                
